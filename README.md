@@ -17,11 +17,11 @@ This work was initially funded by the Local Digital Fund (https://www.localdigit
 
 ## Supported branches
 
-We are actively supporting and developing the 2.x branch for Drupal 9.
+We are actively supporting and developing the 4.x branch for Drupal 10.
 
-The 1.x branch is no longer actively supported and not recommended for new sites.
+The 1.x, 2.x and 3.x branches are no longer actively supported and not recommended for new sites.
 
-If for any reason you are still using the 1.x branch on your site, please [create an issue on Github](https://github.com/localgovdrupal/localgov_microsites/issues) to let us know.
+If you are still using the 1.x, 2.x or 3.x branches on your site, please [create an issue on Github](https://github.com/localgovdrupal/localgov_microsites/issues) to let us know.
 
 ## Documentation
 
@@ -46,7 +46,7 @@ Many of us use the Lando file included to run a local docker environmnent for te
 
 We folllow Drupal's PHP recomendations: https://www.drupal.org/docs/system-requirements/php-requirements#versions
 
-We currently recomend and test against PHP 8.1.
+We currently recomend and test against PHP 8.1 and 8.2.
 
 You will also need to have certain PHP extensions enabled (see https://www.drupal.org/docs/system-requirements/php-requirements#extensions) including: 
 
