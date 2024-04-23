@@ -7,7 +7,6 @@
 
 use Drupal\Core\Session\AccountInterface;
 use Drupal\group\Access\GroupAccessResult;
-use Drupal\group\Entity\GroupInterface;
 
 /**
  * Implements hook_ENTITY_TYPE_create_access() for node entities.
@@ -15,16 +14,10 @@ use Drupal\group\Entity\GroupInterface;
 function localgov_microsites_media_node_create_access(AccountInterface $account, array $context, $entity_bundle) {
 
   // Allow group users to add media items to new nodes.
-  $group_id = \Drupal::service('domain_group_resolver')->getActiveDomainGroupId();
-  if (empty($group_id) &&
-    ($group = \Drupal::service('current_route_match')->getParameter('group')) &&
-    ($group instanceof GroupInterface)
-  ) {
-    $group_id = $group->id();
-  }
-  if ($group_id) {
-    $group = \Drupal::entityTypeManager()->getStorage('group')->load($group_id);
+  $group = localgov_microsites_group_get_by_context();
+  if ($group) {
     $permission = 'create group_node:' . $entity_bundle . ' entity';
     return GroupAccessResult::allowedIfHasGroupPermissions($group, $account, [$permission], 'AND');
   }
+
 }

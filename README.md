@@ -1,3 +1,6 @@
+![Latest Stable Version](https://packagist.org/packages/localgovdrupal/localgov_microsites) ![License](https://github.com/localgovdrupal/localgov_microsites/blob/4.x/LICENSE) ![Tests](https://github.com/localgovdrupal/localgov_microsites/actions/workflows/test.yml/badge.svg)
+
+
 # LocalGov Drupal Microsites
 
 Drupal distribution and install profile to help UK councils collaborate and
