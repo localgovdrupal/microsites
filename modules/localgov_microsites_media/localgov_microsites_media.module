@@ -15,7 +15,9 @@ function localgov_microsites_media_node_create_access(AccountInterface $account,
 
   // Allow group users to add media items to new nodes.
   $group = localgov_microsites_group_get_by_context();
-  $permission = 'create group_node:' . $entity_bundle . ' entity';
-  return GroupAccessResult::allowedIfHasGroupPermissions($group, $account, [$permission], 'AND');
+  if ($group) {
+    $permission = 'create group_node:' . $entity_bundle . ' entity';
+    return GroupAccessResult::allowedIfHasGroupPermissions($group, $account, [$permission], 'AND');
+  }
 
 }
