@@ -17,7 +17,7 @@ function localgov_microsites_install() {
     'microsites_trusted_editor',
   ];
 
-  // Set 'administer redirects' permission for microsite controllers and editors.
+  // Set 'administer redirects' permission for controllers and editors.
   foreach ($role_names as $role_name) {
     $role = Role::load($role_name);
     $role->grantPermission('administer redirects');
@@ -44,7 +44,7 @@ function localgov_microsites_update_10001() {
     \Drupal::service('module_installer')->install(['redirect']);
   }
 
-  // Set 'administer redirects' permission for microsite controllers and editors.
+  // Set 'administer redirects' permission for controllers and editors.
   $role_names = [
     'microsites_controller',
     'microsites_trusted_editor',
