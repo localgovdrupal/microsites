@@ -45,6 +45,7 @@ install:
   - metatag:metatag_open_graph
   - metatag:metatag_twitter_cards
   - require_login:require_login
+  - redirect:redirect
   - twig_tweak:twig_tweak
 
   # LocalGov Drupal
