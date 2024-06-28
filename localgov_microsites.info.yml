@@ -38,6 +38,7 @@ install:
   - autosave_form:autosave_form
   - default_content:default_content
   - domain:domain
+  - domain:domain_alias
   - domain:domain_config
   - domain_path:domain_path
   - group:group
