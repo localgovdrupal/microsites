@@ -21,6 +21,7 @@
         "drupal/gin_login": "^2.0",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/metatag": "^1.22",
+        "drupal/preview_link": "^2.1@alpha",
         "drupal/redirect": "^1.9",
         "drupal/responsive_preview": "^2.1",
         "localgovdrupal/localgov_blogs": "^1.0.0-beta3",
@@ -51,6 +52,10 @@
             "drupal/domain_path": {
                 "https://github.com/localgovdrupal/localgov_microsites/pull/175#issuecomment-1172879196": "https://raw.githubusercontent.com/localgovdrupal/localgov_microsites/995261d0909065e3124fba3fc0dce3e823aefa1d/patches/domain_path.146-url-aliases.patch",
                 "https://github.com/localgovdrupal/localgov_microsites_group/issues/326": "https://raw.githubusercontent.com/localgovdrupal/localgov_microsites/4cbdbe6ae3c3e95e7d2ed15d918c66805ad8e7f1/patches/localgov_microsites_group_326.domain_path_pathauto.unserializable.patch"
+            },
+            "drupal/preview_link": {
+                "Automatically populating multiple preview link entities #3439968": "https://www.drupal.org/files/issues/2024-05-22/3439968-4.diff",
+                "Add a 'copy to clipboard' feature for preview_link": "https://www.drupal.org/files/issues/2024-08-15/3449121-10.patch"
             }
         }
     }
