@@ -1,4 +1,6 @@
-![Latest Stable Version](https://packagist.org/packages/localgovdrupal/localgov_microsites) ![License](https://github.com/localgovdrupal/localgov_microsites/blob/4.x/LICENSE) ![Tests](https://github.com/localgovdrupal/localgov_microsites/actions/workflows/test.yml/badge.svg)
+![GitHub Release](https://img.shields.io/github/v/release/localgovdrupal/localgov_microsites)
+ ![GitHub License](https://img.shields.io/github/license/localgovdrupal/localgov_microsites)
+ ![Tests](https://github.com/localgovdrupal/localgov_microsites/actions/workflows/test.yml/badge.svg)
 
 
 # LocalGov Drupal Microsites
