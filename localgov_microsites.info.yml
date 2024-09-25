@@ -62,6 +62,7 @@ install:
   - localgov_microsites_group:localgov_microsites_group_webform
   - localgov_paragraphs:localgov_paragraphs_views
   - localgov_sa11y:localgov_sa11y
+  - localgov_base:localgov_base_helper
 
 themes:
   - localgov_microsites_base
