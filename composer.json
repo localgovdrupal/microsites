@@ -20,7 +20,7 @@
         "drupal/gin": "^3.0@RC",
         "drupal/gin_login": "^2.0",
         "drupal/gin_toolbar": "^1.0@RC",
-        "drupal/metatag": "^1.22",
+        "drupal/metatag": "^2.0.2",
         "drupal/redirect": "^1.9",
         "drupal/responsive_preview": "^2.1",
         "localgovdrupal/localgov_blogs": "^1.0.0-beta3",
