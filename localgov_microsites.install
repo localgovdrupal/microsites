@@ -6,6 +6,7 @@
  */
 
 use Drupal\user\Entity\Role;
+use Drupal\user\Entity\User;
 
 /**
  * Implements hook_install().
@@ -23,6 +24,9 @@ function localgov_microsites_install() {
     $role->grantPermission('administer redirects');
     $role->save();
   }
+
+  $admin = User::load(1);
+  $admin->addRole('microsites_controller');
 }
 
 /**
